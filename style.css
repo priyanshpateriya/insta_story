@@ -1,0 +1,276 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(216, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main #card{
+    border-radius: 4px;
+    width: 410px;
+    height: 70%;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#main #card #nav{
+    padding: 5px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(18, 17, 17);
+    display: flex;
+    align-items: center;
+    gap: 59%;
+}
+#nav h2{
+
+    font-family: "Voyage";
+    color: white;
+}
+#nav-left{
+
+    display: flex;
+    gap: 10px;
+    color: white;
+    padding: 5px;
+
+}
+#nav-left i{
+    font-size: x-large;
+    color: rgb(249, 246, 246);
+}
+#stories{
+    width: 100%;
+    height: 100px;
+
+    border-bottom: 1px solid rgb(123, 125, 123);
+    background-color: rgba(0, 0, 0, 0.916);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#stories::-webkit-scrollbar{
+    display: none;
+}
+#card #stories #story{
+    margin: 3px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background:linear-gradient(to right,rgba(132, 4, 4, 0.895),rgb(210, 102, 2),rgba(159, 3, 146, 0.831),rgba(164, 3, 67, 0.918));
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   display: inline-flex;
+}
+.inner{
+    border: 3.5px solid rgb(41, 40, 40);
+    width: 91%;
+    height: 91%;
+    background-color: green;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+.inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* full screen */
+
+#fs{
+    border-radius: 4px;
+    width: 410px;
+    height: 70%;
+    background-color: rgba(255, 0, 0, 0.292);
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+#fs #pic{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.447);
+}
+.progress{
+    height: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.623);
+}
+.prog-maker{
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(228, 225, 225);
+}
+#fs #pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----- post ---- */
+
+#posts{
+    margin: 0px 0px 0px 0px;
+    height: 70%;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.285); */
+    overflow-y: scroll;
+    overflow-x:hidden ;
+    background-color: rgb(16, 16, 16);
+}
+#posts::-webkit-scrollbar{
+    display: none;
+}
+#posts #post{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    
+}
+
+
+
+
+#posts #post #post-inner{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    
+}
+
+
+
+
+
+#post #pt-bar{
+    margin-top: 30px;
+    height: 26px;
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 6px 2px 6px;
+    color:white;
+}
+#post #pt-bar-i{  /* post Top bar-inner */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+#pt-bar-i h4{
+    font-family: 'gilroy';
+    font-weight: 450;
+}
+#pt-bar #pt-profile{
+    width: 24px;
+    height: 24px;
+    background:linear-gradient(to right,rgba(132, 4, 4, 0.895),rgb(210, 102, 2),rgba(159, 3, 146, 0.831),rgba(164, 3, 67, 0.918));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pt-profile #pro-inner{
+    width: 91%;
+    height: 91%;
+    background-color: green;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#pro-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* post image */
+#post #post-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.331);
+    
+}
+#post-image img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* post down bar like comment share save */
+#pd-bar{
+    display: flex;
+    padding: 2px 5px 2px 5px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #151515; */
+    border-bottom: 1px solid rgb(67, 66, 66);
+    color: white;
+    font-size: large;
+
+}
+
+#pd-bar-l{
+    display: flex;
+    gap: 10px;
+}
+#pd-bar-l .ri-heart-3-fill:hover{
+    color:red;
+}
+
+
+
+
+
+
+/* ------- down-nav ------ */
+/* -------- home, search, reels, profile */
+#card #b-nav{
+    padding: 0px 10px 0px 15px;
+    width: 100%;
+    height: 5%;
+    color: white;
+    background-color: black;
+    border-top: 0.5px solid rgb(63, 62, 62);
+    
+}
+#card #b-nav #b-i-nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+#b-i-nav{
+    font-size: large;
+}
+#card #b-nav #b-nav-profile{
+    
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#b-nav-profile img{ /* ---- set image inside bar  ------ */
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
